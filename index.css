@@ -1,14 +1,19 @@
+body {
+	width: 1600px;
+	margin: 0 auto;
+}
+
 html{
 	background-color: #AACCFF;
 }
 
 .seperator {
-	width: 80%;
+	width: 1280px;
 	height: 1px;
 }
 
 .header {
-	width: 80%;
+	width: 1280px;
 	height: 100px;	
 	margin: 0 auto;
 	margin-top: -20px;
@@ -18,13 +23,13 @@ html{
 
 #lablogo {
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 #lab {
 	display: inline-block;
 	position: absolute;
-	margin-top: 25px;
+	margin-top: 45px;
 	text-shadow: 2px 2px 6px #CCC;
 }
 
@@ -43,13 +48,13 @@ html{
 
 #columbialogo {
 	float: right;
-	margin-top: 17px;
+	margin-top: 37px;
 	margin-right: 10px;
 }
 
 .tabs {
 	display: block;
-	width: 80%;
+	width: 1280px;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #88A3CC;
@@ -58,11 +63,12 @@ html{
 .indivtabs {
 	background-color: #88A3CC;
 	display: inline-block;
-	width: 14.01%;
 	font-size: 18px;
 	font-family: verdana;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
 	transition: font-size 0.1s;
 	-webkit-transition: font-size 0.1s;
 }
@@ -77,7 +83,7 @@ html{
 }
 
 .body {
-	width: 80%;
+	width: 1280px;
 	margin: 0 auto;
 	background-color: white;
 	height: 1000px;
