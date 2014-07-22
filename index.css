@@ -65,10 +65,7 @@ html{
 	display: inline-block;
 	font-size: 18px;
 	font-family: verdana;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 10px 40px;
 	transition: font-size 0.1s;
 	-webkit-transition: font-size 0.1s;
 }
@@ -89,3 +86,6 @@ html{
 	height: 1000px;
 }
 
+#bodydescription {
+	padding: 20px;
+}
