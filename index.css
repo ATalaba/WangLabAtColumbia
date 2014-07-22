@@ -1,0 +1,85 @@
+html{
+	background-color: #AACCFF;
+}
+
+.seperator {
+	width: 80%;
+	height: 1px;
+}
+
+.header {
+	width: 80%;
+	height: 100px;	
+	margin: 0 auto;
+	margin-top: -20px;
+	background-color: white;
+	text-shadow: 2px 2px 6px #CCC;	
+}
+
+#lablogo {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#lab {
+	display: inline-block;
+	position: absolute;
+	margin-top: 25px;
+	text-shadow: 2px 2px 6px #CCC;
+}
+
+#name {
+	margin-left: 10px;
+	font: 18px verdana;
+	font-weight: bold;
+	color: #3A53A4;
+}
+
+#description {
+	margin-left: 10px;
+	color: #70CDDD;
+	font: 16px verdana;
+}
+
+#columbialogo {
+	float: right;
+	margin-top: 17px;
+	margin-right: 10px;
+}
+
+.tabs {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #88A3CC;
+}
+
+.indivtabs {
+	background-color: #88A3CC;
+	display: inline-block;
+	width: 14.01%;
+	font-size: 18px;
+	font-family: verdana;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	transition: font-size 0.1s;
+	-webkit-transition: font-size 0.1s;
+}
+
+.indivtabs a {
+	text-decoration: none;
+	color: white;
+}
+
+.indivtabs:hover {
+	font-size: 20px;
+}
+
+.body {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	height: 1000px;
+}
+
