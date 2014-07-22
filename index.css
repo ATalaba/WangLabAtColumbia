@@ -86,6 +86,14 @@ html{
 	
 }
 
+#blurover {
+	overflow: hidden;
+	-webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+
 #blurpicture {
 	display: block;
 	background-image: url('images/microbes.jpg');
@@ -97,6 +105,10 @@ html{
   	-ms-filter: blur(7px);
   	filter: blur(7px);
   	z-index: 1;
+  	clip: rect();
+  	-webkit-box-shadow: inset 0 0 200px #000000;
+       -moz-box-shadow: inset 0 0 200px #000000;
+            box-shadow: inset 0 0 200px #000000;
 }
 
 #pictext {
@@ -117,4 +129,31 @@ html{
 	font-family: verdana;
 	font-size: 25px;
 	font-family: 'Arvo', serif;
+}
+
+#sponsors {
+	display: inline-block;
+}
+
+
+#one {
+	position: relative;
+	text-decoration: none;
+	bottom: 60px;
+	left: 38px;
+
+}
+
+#two {
+	position: relative;
+	text-decoration: none;
+	left: 450px;
+	bottom: 30px;
+}
+
+#three {
+	position: relative;
+	text-decoration: none;
+	left: 25px;
+	bottom: 5px;
 }
