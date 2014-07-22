@@ -66,32 +66,34 @@ html{
 	font-size: 18px;
 	font-family: 'Arvo' serif;
 	padding: 10px 40px;
-	transition: font-size 0.2s;
-	-webkit-transition: font-size 0.1s;
+	
 }
 
 .indivtabs a {
 	text-decoration: none;
 	color: white;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
 }
 
-.indivtabs:hover {
-	font-size: 20px;
+.indivtabs a:hover {
+	color: #FFBD6A;
 }
 
 .body {
 	width: 1280px;
 	margin: 0 auto;
 	background-color: white;
-	
+	margin-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 #blurover {
 	overflow: hidden;
 	-webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
+  	-moz-filter: blur(0px);
+  	-ms-filter: blur(0px);
+  	filter: blur(0px);
 }
 
 #blurpicture {
@@ -156,4 +158,21 @@ html{
 	text-decoration: none;
 	left: 25px;
 	bottom: 5px;
+}
+
+#hire {
+	width: 252px;
+	height: 90px;
+	display: block;
+	background: url('images/nowhiring.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+	margin: 0 auto;
+}
+
+#hire:hover {
+	background: url('images/nowhiring2.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
