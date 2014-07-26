@@ -5,6 +5,7 @@
 	<meta name="description" content="Harris Wang Research Laboratory Homepage Columbia University Synthetic Biology System Biology Genome Engineering Human Microbiome Microbiomics">
 
 	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="header">
@@ -13,9 +14,10 @@
 			<span id="name">WANG LAB</span><br>
 			<span id="description">synthetic biology, genomics, evolution</span>
 		</div>
-		<img src="images/columbialogo.jpg" id="columbialogo" width="277" height="52">
+		<a href="http://www.cumc.columbia.edu/" target="_blank">
+			<img src="images/columbialogo.jpg" id="columbialogo" width="277" height="52">
+		</a>
 	</div>
-	<div class="seperator"></div>
 	<div class="tabs">
 		<div class="indivtabs" id="home"><a href="index.html">HOME</a></div>
 		<div class="indivtabs" id="members"><a href="members.html">MEMBERS</a></div>
@@ -25,12 +27,63 @@
 		<div class="indivtabs" id="news"><a href="news.html">NEWS</a></div>
 		<div class="indivtabs" id="contact"><a href="contact.html">CONTACT</a></div>
 	</div>
-	<div class="seperator"></div>
 	<div class="body">
-		<h1>Welcome</h1>
-		<p>We apply synthetic and systems biology approaches to design and build new microbes with novel capabilities, leveraging both engineering and evolutionary principles.
+		<div id="blurover"><div id="blurpicture"></div></div>
+		<div id="pictext">
+			<p>Contact the lab</p>
+		</div>
+		<div id="bodydescription">
+			<div class="maparea">
+				<div class="nexttomap">
+					<h3>Our lab is located at:</h3>
+					<p><a href="https://maps.google.com/maps?q=701+W+168th+St+New+York,+NY+10032&hnear=701+W+168th+St,+New+York,+10032&gl=us&t=m&z=16" target='_blank'>
+					Columbia University Medical Center<br>
+					Hammer Health Science Center<br>
+					13th Floor, Room 1308<br>
+					701 West 168th Street<br>
+					New York, NY 10032, USA</a></p>
+					<p>Office location: Room 1308-B<br>
+					Office phone: 212-305-1697<br>
+					Lab phone: 212-305-0758<br>
+					Email: <a href="mailto:hw2429@columbia.edu">hw2429@columbia.edu</a></p>
+				</div>
+				<div class="map">
+				</div>
+			</div>
+			<h3 class="red">OPEN POSITIONS AVAILABLE:</h3>
+			<ul>
+				<li>Postdoctoral fellows</li>
+				<li>Ph.D. or M.D.-Ph.D. students</li>
+				<li>Research technicians</li>
+				<li>Undergraduate students</li>
+			</ul>
+			<p>We are seeking <span class="underline">highly talented</span> and <span class="underline">motivated</span> colleagues to grow our lab!</p>
+			<p>Given our multi-disciplinary <a href="research.html">research interests</a> in <span class="underline">synthetic biology</span>, <span class="underline">systems biology</span>, <span class="underline">evolutionary biology</span>, <span class="underline">genomics</span>, <span class="underline">bioengineering</span>, and <span class="underline">automation</span>, we welcome those from a variety of backgrounds and training. Individuals from computational biology and experimental microbiology backgrounds are <strong>highly encouraged</strong> to apply as well as those from other areas such as chemistry, physics, mathematics, and engineering disciplines. </p>
 
-		We are interested developing platform technologies and using them to answer fundamental biological questions. Our research interests are:</p>
+			<h3 class="red">HOW TO APPLY:</h3>
+			<p>Please send your CV and references to: <a href="mailto:hw2429@columbia.edu">hw2429@columbia.edu</a></p>
+		</div>	
 	</div>
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=API_KEY">
+		function initialize() {
+			var mapOptions = {
+				zoom: 8,
+				center: new google.maps.LatLng(40.842759, -73.942451)
+			};
+
+			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		}
+
+		function loadScript() {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+      					 'callback=initialize';
+      		document.body.appendChild(script);
+		}
+
+		window.onload = loadScript;
+	</script>
 </body>
 </html>
