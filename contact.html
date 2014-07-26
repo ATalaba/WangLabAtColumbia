@@ -47,7 +47,7 @@
 					Lab phone: 212-305-0758<br>
 					Email: <a href="mailto:hw2429@columbia.edu">hw2429@columbia.edu</a></p>
 				</div>
-				<div class="map">
+				<div id="map">
 				</div>
 			</div>
 			<h3 class="red">OPEN POSITIONS AVAILABLE:</h3>
@@ -65,25 +65,36 @@
 		</div>	
 	</div>
 	<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=API_KEY">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgRkM84UfSvttWZscRc1iuCus6HHYDwYk"></script>
+      <script>
 		function initialize() {
-			var mapOptions = {
-				zoom: 8,
-				center: new google.maps.LatLng(40.842759, -73.942451)
-			};
+			var myLatLng = new google.maps.LatLng(40.842759, -73.942451);
+  			var mapOptions = {
+    			zoom: 15,
+    			center: myLatLng
+ 			};
 
-			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-		}
+  			var map = new google.maps.Map(document.getElementById('map'),
+      			mapOptions);
 
-		function loadScript() {
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
-      					 'callback=initialize';
-      		document.body.appendChild(script);
-		}
+  			var marker = new google.maps.Marker({
+				position: myLatLng,
+				title:"Our lab!"
+			});
 
-		window.onload = loadScript;
+			marker.setMap(map);
+
+		};
+
+			function loadScript() {
+ 				var script = document.createElement('script');
+  				script.type = 'text/javascript';
+  				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+      			'callback=initialize';
+  				document.body.appendChild(script);
+			}
+
+			window.onload = loadScript;
 	</script>
 </body>
 </html>
