@@ -79,22 +79,12 @@
 
   			var marker = new google.maps.Marker({
 				position: myLatLng,
+				map: map,
 				title:"Our lab!"
 			});
-
-			marker.setMap(map);
-
 		};
-
-			function loadScript() {
- 				var script = document.createElement('script');
-  				script.type = 'text/javascript';
-  				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
-      			'callback=initialize';
-  				document.body.appendChild(script);
-			}
-
-			window.onload = loadScript;
+		
+		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </body>
 </html>
