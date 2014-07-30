@@ -230,6 +230,17 @@ html{
 	margin-right: 55px;
 }
 
+/*Publications specific*/
+#denote {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+ol {
+	margin-left: 20px;
+}
+
 /*Contact specific*/
 .maparea {
 	display: inline-flex;
