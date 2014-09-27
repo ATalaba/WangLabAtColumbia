@@ -124,7 +124,8 @@ html{
 	text-shadow: 2px 2px 6px #CCC;
 	z-index: 9999;
 	margin-top: -180px;
-	margin-left: 250px;
+	float: right;
+	margin-right: 100px;
 	font-family: 'Arvo', serif;	
 	font-weight: 700;
 }
